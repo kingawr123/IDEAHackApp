@@ -5,23 +5,23 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Actions } from 'react-native-router-flux';
 
 
-export class RegisterJunior extends React.Component {
+export class RegisterJuniorFreeTime extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text style={styles.textstyle1}>Zarejestruj się</Text>
-                <Text style={styles.textstyle2}>Podaj swoje dane:</Text>
-                <Input placeholder='login' />
-                <Input placeholder='hasło' />
-                <Input placeholder='Imię' />
-                <Input placeholder='Nazwisko' />
-                <Input placeholder='Data Urodzenia' />
-                <Button onPress={() => Actions.JuniorFreeTime()} titleStyle={styles.title} buttonStyle={styles.btnJunior} title="Dalej" type="solid" ></Button>
+                <Text style={styles.textstyle2}>Zaznacz gdzie lubisz spędzać czas:</Text>
+                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="kawiarnia" type="solid" ></Button>
+                {/* zrobić zmianę koloru po naciśnięciu przycisku */}
+                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="biblioteka" type="solid" ></Button>
+                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="kino" type="solid" ></Button>
+                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="filharmonia" type="solid" ></Button>
+                <Input placeholder='Inne' />
+                <Button onPress={() => Actions.JuniorHobby()} titleStyle={styles.title} buttonStyle={styles.btnJunior} title="Dalej" type="solid" ></Button>
             </View>
 
             
         )
-    }
+    } 
 }
 
 const styles = StyleSheet.create({
@@ -46,12 +46,6 @@ const styles = StyleSheet.create({
       fontSize: 20,
       fontFamily: 'monospace'
     },
-
-    textstyle1: {
-        fontSize: 35,
-        fontFamily: 'monospace',
-        color: "green"
-      },
 
       textstyle2: {
         fontSize: 20,
