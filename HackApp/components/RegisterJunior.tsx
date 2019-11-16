@@ -10,7 +10,7 @@ export class Register extends React.Component {
     render() {
         return (
             <View style={styles.Container}>
-                
+                <Text>Działa</Text>
             </View>
 
         )
@@ -27,6 +27,5 @@ const styles = StyleSheet.create({
     },
 });
 
-export default withNavigation(Register);
 
 //006666

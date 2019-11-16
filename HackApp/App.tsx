@@ -1,18 +1,23 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button, Image } from 'react-native-elements';
-import { createAppContainer } from 'react-navigation';
+import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from 'react-navigation-stack';
 import { Register } from './components/RegisterJunior'
 
 
-export class HomePage extends React.Component {
+class HomePage extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Image source={require('./assets/logo1.jpg')} style={styles.img} />
         <View style={styles.btnContainer}>
-          <Button titleStyle={styles.title} buttonStyle={styles.btnSerior} title="SENIOR" type="solid"></Button>
+          <Button 
+          titleStyle={styles.title} 
+          buttonStyle={styles.btnSerior} 
+          title="SENIOR" 
+          type="solid" 
+          ></Button>
           <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="MŁODY" type="solid"></Button>
         </View>
       </View>
@@ -62,14 +67,16 @@ const styles = StyleSheet.create({
 });
 
 const StackNavigator = createStackNavigator({
-    Home: {
-      screen: HomePage
-    },
-    RegisterJunior: {
-      screen: Register
-    }
-    
-  })
+  Home: {
+    screen: HomePage,
+  },
+  Register: {
+    screen: Register
+  },
+},
+  {
+    initialRouteName: 'Home',
+  });
 
 const AppContainer = createAppContainer(StackNavigator);
 
