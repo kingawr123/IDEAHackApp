@@ -6,6 +6,7 @@ import { RegisterJunior } from './components/RegisterJunior';
 import { RegisterSenior } from './components/RegisterSenior';
 import { Home } from './components/Home'
 import { ChooseGeneration } from './components/ChooseGeneration';
+import { SignIn } from './components/SignIn';
 
 
 export default class App extends React.Component {
@@ -18,6 +19,7 @@ export default class App extends React.Component {
             <Scene key="registerJunior" component={RegisterJunior} title="Register Junior" />
             <Scene key="registerSenior" component={RegisterSenior} title="Register Senior" />
             <Scene key="chooseGeneration" component={ChooseGeneration} hideNavBar/>
+            <Scene key="signIn" component={SignIn} hideNavBar/>
           </Stack>
         </Router>
       </View>
