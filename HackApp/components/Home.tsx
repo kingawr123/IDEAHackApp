@@ -7,14 +7,14 @@ export class Home extends React.Component {
     render() {
       return (
         <View style={styles.container}>
-          <Image source={require('../assets/logo1.jpg')} style={styles.img} />
+          <Image source={require('../assets/PokoleLogo.png')} style={styles.img} />
           <View style={styles.btnContainer}>
             <Button 
             titleStyle={styles.title} 
             buttonStyle={styles.btnSerior} 
             title="Zaloguj" 
             type="solid" 
-            onPress={() => Actions.registerJunior()}
+            onPress={() => Actions.signIn()}
             ></Button>
             <Button 
             titleStyle={styles.title} 
@@ -39,8 +39,8 @@ export class Home extends React.Component {
     },
   
     img: {
-      height: 200,
-      width: 200,
+      height: 300,
+      width: 300,
       marginBottom: 100
     },
   

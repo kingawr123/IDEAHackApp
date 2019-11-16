@@ -8,6 +8,7 @@ import { Home } from './components/Home'
 import { ChooseGeneration } from './components/ChooseGeneration';
 import { RegisterJuniorHobby } from './components/RegisterJuniorHobby';
 import { RegisterJuniorFreeTime } from './components/RegisterJuniorFreeTime';
+import { SignIn } from './components/SignIn';
 
 
 export default class App extends React.Component {
@@ -22,6 +23,7 @@ export default class App extends React.Component {
             <Scene key="chooseGeneration" component={ChooseGeneration} hideNavBar/>
             <Scene key="JuniorHobby" component={RegisterJuniorHobby} hideNavBar/>
             <Scene key="JuniorFreeTime" component={RegisterJuniorFreeTime} hideNavBar/>
+            <Scene key="signIn" component={SignIn} hideNavBar/>
           </Stack>
         </Router>
       </View>
