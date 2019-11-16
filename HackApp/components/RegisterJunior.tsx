@@ -1,31 +1,21 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Button, Image } from 'react-native-elements';
+import { Button, Image, Input } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { InputJunior } from './InputJunior';
-import { withNavigation } from 'react-navigation';
 
 
-export class Register extends React.Component {
+export class RegisterJunior extends React.Component {
     render() {
         return (
-            <View style={styles.Container}>
+            // <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+            //   <Input placeholder='login'/>
+            // </View>
+            <View>
                 <Text>Działa</Text>
             </View>
-
-        )
+        );
     }
 }
-
-
-const styles = StyleSheet.create({
-    Container: {
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-});
 
 
 //006666
