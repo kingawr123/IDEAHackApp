@@ -35,17 +35,17 @@ const styles = StyleSheet.create({
     },
 
     btnSerior: {
-        width: 250,
-        height: 100,
+        width: 300,
+        height: 150,
         borderRadius: 30,
-        backgroundColor: '#006666',
+        backgroundColor: '#00695C',
     },
 
     btnJunior: {
-        width: 250,
-        height: 100,
+        width: 300,
+        height: 150,
         borderRadius: 30,
-        backgroundColor: '#006666'
+        backgroundColor: '#339900'
     },
 
     title: {
