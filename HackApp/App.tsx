@@ -1,26 +1,77 @@
 import React from 'react';
-import { StyleSheet, Text, View} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { StartPage } from './components/StartPage'
-import { Header } from 'react-native-elements';
+import { Button, Image } from 'react-native-elements';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      {/* <Header 
-        backgroundColor='#006666'
-        leftComponent={{ icon: 'menu', color: '#fff' }}
-        centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
-        rightComponent={{ icon: 'home', color: '#fff' }} /> */}
-      <StartPage />
-    </View>
-  );
+
+export class HomePage extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Image source={require('./assets/logo1.jpg')} style={styles.img} />
+        <View style={styles.btnContainer}>
+          <Button titleStyle={styles.title} buttonStyle={styles.btnSerior} title="SENIOR" type="solid"></Button>
+          <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="MŁODY" type="solid"></Button>
+        </View>
+      </View>
+
+    )
+  }
+
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center'
   },
+
+  img: {
+    height: 200,
+    width: 200,
+    marginBottom: 100
+  },
+
+  btnContainer: {
+    justifyContent: 'space-between'
+  },
+
+  btnSerior: {
+    width: 300,
+    height: 100,
+    borderRadius: 30,
+    backgroundColor: '#00695c',
+    marginBottom: 50
+  },
+
+  btnJunior: {
+    width: 300,
+    height: 100,
+    borderRadius: 30,
+    backgroundColor: '#339900',
+  },
+
+  title: {
+    fontSize: 35,
+    fontFamily: 'sans-serif-condensed'
+  }
 });
+
+const StackNavigator = createStackNavigator({
+    Home: {
+      screen: HomePage
+    }
+    
+  })
+
+const AppContainer = createAppContainer(StackNavigator);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}
