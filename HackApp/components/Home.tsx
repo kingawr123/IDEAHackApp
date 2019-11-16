@@ -21,7 +21,7 @@ export class Home extends React.Component {
             buttonStyle={styles.btnJunior} 
             title="Zarejestruj" 
             type="solid"
-            onPress={()=> Actions.registerSenior()}></Button>
+            onPress={()=> Actions.chooseGeneration()}></Button>
           </View>
         </View>
   
