@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { StartPage } from './components/StartPage'
 import { Button, Image } from 'react-native-elements';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+import { Register } from './components/RegisterJunior'
 
 
 export class HomePage extends React.Component {
@@ -64,6 +64,9 @@ const styles = StyleSheet.create({
 const StackNavigator = createStackNavigator({
     Home: {
       screen: HomePage
+    },
+    RegisterJunior: {
+      screen: Register
     }
     
   })
