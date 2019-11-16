@@ -4,15 +4,13 @@ import { Button, Image, Input } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
-export class RegisterJunior extends React.Component {
+export class ChooseGeneration extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Input placeholder='login' />
+              <Button />
+              <Button />
             </View>
         )
     }
 }
-
-
-//006666

@@ -14,9 +14,14 @@ export class Home extends React.Component {
             buttonStyle={styles.btnSerior} 
             title="Zaloguj" 
             type="solid" 
-            onPress={() => Actions.register()}
+            onPress={() => Actions.registerJunior()}
             ></Button>
-            <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="Zarejestruj" type="solid"></Button>
+            <Button 
+            titleStyle={styles.title} 
+            buttonStyle={styles.btnJunior} 
+            title="Zarejestruj" 
+            type="solid"
+            onPress={()=> Actions.registerSenior()}></Button>
           </View>
         </View>
   
@@ -29,7 +34,8 @@ export class Home extends React.Component {
       flex: 1,
       flexDirection: 'column',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      backgroundColor: '#fff'
     },
   
     img: {
@@ -53,7 +59,7 @@ export class Home extends React.Component {
     btnJunior: {
       width: 300,
       height: 100,
-      borderRadius: 30,
+      borderRadius: 20,
       backgroundColor: '#339900',
     },
   
