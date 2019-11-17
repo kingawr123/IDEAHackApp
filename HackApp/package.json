@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@types/react-native-snap-carousel": "^3.7.4",
     "expo": "^35.0.0",
     "node": "^8.10.0",
     "react": "16.8.3",
@@ -16,6 +17,7 @@
     "react-native-elements": "^1.2.7",
     "react-native-gesture-handler": "^1.5.0",
     "react-native-router-flux": "^4.0.6",
+    "react-native-snap-carousel": "^3.8.4",
     "react-native-web": "^0.11.7",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.3"

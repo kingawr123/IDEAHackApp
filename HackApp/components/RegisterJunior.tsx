@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     textstyle1: {
         fontSize: 35,
         fontFamily: 'monospace',
-        color: "green"
+        color: "#339900"
       },
 
       textstyle2: {
