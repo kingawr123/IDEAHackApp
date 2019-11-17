@@ -6,17 +6,21 @@ import { Actions } from 'react-native-router-flux';
 
 
 export class RegisterJuniorFreeTime extends React.Component {
+
+  ChangeColor = () => {
+    
+  }
     render() {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text style={styles.textstyle2}>Zaznacz gdzie lubisz spędzać czas:</Text>
-                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="kawiarnia" type="solid" ></Button>
-                {/* zrobić zmianę koloru po naciśnięciu przycisku */}
-                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="biblioteka" type="solid" ></Button>
-                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="kino" type="solid" ></Button>
-                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="filharmonia" type="solid" ></Button>
+                <Text style={styles.textstyle2}>Gdzie lubisz spędzać czas:</Text>
+                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="kawiarnia" ></Button>
+                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="biblioteka" ></Button>
+                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="kino" ></Button>
+                <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="filharmonia" ></Button>
                 <Input placeholder='Inne' />
-                <Button onPress={() => Actions.JuniorHobby()} titleStyle={styles.title} buttonStyle={styles.btnJunior} title="Dalej" type="solid" ></Button>
+                <Button onPress={() => Actions.JuniorHobby()} buttonStyle={{ width: 100, height: 100, borderRadius: 50, backgroundColor: '#339900', marginTop: 20}} icon={{name: 'check', size: 50, color: "white"}}
+                ></Button>
             </View>
 
             
@@ -48,8 +52,10 @@ const styles = StyleSheet.create({
     },
 
       textstyle2: {
-        fontSize: 20,
+        fontSize: 25,
         fontFamily: 'monospace',
+        color:'#339900',
+        marginBottom: 50
       }
   });
 //006666

@@ -18,8 +18,8 @@ export default class App extends React.Component {
         <Router>
           <Stack key="root">
             <Scene key="home" component={Home} hideNavBar/>
-            <Scene key="registerJunior" component={RegisterJunior} title="Register Junior" />
-            <Scene key="registerSenior" component={RegisterSenior} title="Register Senior" />
+            <Scene key="registerJunior" component={RegisterJunior} title="Register Junior" hideNavBar/>
+            <Scene key="registerSenior" component={RegisterSenior} title="Register Senior" hideNavBar/>
             <Scene key="chooseGeneration" component={ChooseGeneration} hideNavBar/>
             <Scene key="JuniorHobby" component={RegisterJuniorHobby} hideNavBar/>
             <Scene key="JuniorFreeTime" component={RegisterJuniorFreeTime} hideNavBar/>

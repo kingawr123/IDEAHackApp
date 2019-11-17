@@ -11,12 +11,13 @@ export class RegisterJunior extends React.Component {
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                 <Text style={styles.textstyle1}>Zarejestruj się</Text>
                 <Text style={styles.textstyle2}>Podaj swoje dane:</Text>
-                <Input placeholder='login' />
-                <Input placeholder='hasło' />
-                <Input placeholder='Imię' />
-                <Input placeholder='Nazwisko' />
-                <Input placeholder='Data Urodzenia' />
-                <Button onPress={() => Actions.JuniorFreeTime()} titleStyle={styles.title} buttonStyle={styles.btnJunior} title="Dalej" type="solid" ></Button>
+                <Input containerStyle={{ marginBottom: 30 }} placeholder='login' />
+                <Input containerStyle={{ marginBottom: 30 }} placeholder='hasło' />
+                <Input containerStyle={{ marginBottom: 30 }} placeholder='Imię' />
+                <Input containerStyle={{ marginBottom: 30 }} placeholder='Nazwisko' />
+                <Input containerStyle={{ marginBottom: 30 }} placeholder='Data Urodzenia' />
+                <Button onPress={() => Actions.JuniorFreeTime()} buttonStyle={{ width: 100, height: 100, borderRadius: 50, backgroundColor: '#339900'}} icon={{name: 'check', size: 50, color: "white"}}
+                ></Button>
             </View>
 
             
