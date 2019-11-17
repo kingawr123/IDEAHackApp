@@ -18,7 +18,7 @@ export class RegisterSenior extends React.Component {
                 <Input containerStyle={{ marginBottom: 20 }} placeholder='miejsce do wpisania' />
                 <Text style={styles.textstyle2}>Nazwisko:</Text>
                 <Input containerStyle={{ marginBottom: 20 }} placeholder='miejsce do wpisania' />
-                <Text style={styles.textstyle2}>Datę urodzenia (dzień, miesiąc, rok):</Text>
+                <Text style={styles.textstyle2}>   Datę urodzenia {"\n"} (dzień, miesiąc, rok):</Text>
                 <Input containerStyle={{ marginBottom: 20 }} placeholder='miejsce do wpisania' />
                 <Button onPress={() => Actions.SeniorFreeTime()} buttonStyle={{ width: 100, height: 100, borderRadius: 50, backgroundColor: '#339900'}} icon={{name: 'check', size: 50, color: "white"}}
                 ></Button>

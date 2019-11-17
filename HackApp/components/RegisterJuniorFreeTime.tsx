@@ -13,7 +13,7 @@ export class RegisterJuniorFreeTime extends React.Component {
     render() {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                <Text style={styles.textstyle2}>Gdzie lubisz spędzać czas:</Text>
+                <Text style={styles.textstyle2}>Ulubione miejsca:</Text>
                 <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="kawiarnia" ></Button>
                 <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="biblioteka" ></Button>
                 <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="kino" ></Button>
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     },
 
       textstyle2: {
-        fontSize: 25,
+        fontSize: 32,
         fontFamily: 'monospace',
         color:'#339900',
         marginBottom: 50

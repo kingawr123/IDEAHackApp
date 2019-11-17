@@ -9,7 +9,7 @@ export class RegisterJuniorHobby extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text style={styles.textstyle2}>Zaznacz zainteresowania:</Text>
+        <Text style={styles.textstyle2}>Zainteresowania:</Text>
         <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="sport" type="solid" ></Button>
         <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="muzyka" type="solid" ></Button>
         <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="filmy" type="solid" ></Button>
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   },
 
   textstyle2: {
-    fontSize: 25,
+    fontSize: 32,
     fontFamily: 'monospace',
     color: '#339900',
     marginBottom: 50

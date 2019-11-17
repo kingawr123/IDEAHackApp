@@ -35,7 +35,7 @@ export class FirstChoicePeople extends React.Component {
                     firstItem={0}
                     style={{ marginTop: 50, flex: 1 }}>
                 </Carousel>
-                <Button buttonStyle={{ width: 80, height: 80, borderRadius: 40, backgroundColor: '#339900', marginLeft: 230, marginBottom: 20 }} icon={{ name: 'check', size: 50, color: "white" }}
+                <Button onPress={() => Actions.selectPlaces()} buttonStyle={{ width: 80, height: 80, borderRadius: 40, backgroundColor: '#339900', marginLeft: 230, marginBottom: 20 }} icon={{ name: 'check', size: 50, color: "white" }}
                 ></Button>
             </View>
         )

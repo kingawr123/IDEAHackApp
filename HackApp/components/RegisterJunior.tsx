@@ -51,11 +51,12 @@ const styles = StyleSheet.create({
     textstyle1: {
         fontSize: 35,
         fontFamily: 'monospace',
-        color: "#339900"
+        color: "#339900",
+        marginBottom: 40
       },
 
       textstyle2: {
-        fontSize: 20,
+        fontSize: 25,
         fontFamily: 'monospace',
       }
   });

@@ -33,7 +33,7 @@ export class SignIn extends React.Component {
                     leftIconContainerStyle={styles.icon}
                 ></Input>
                 <Text style={{ fontSize: 15, color:'black', marginTop: 5}}>Nie pamietasz hasła? Kliknij!</Text>
-                <Button buttonStyle={{ width: 100, height: 100, borderRadius: 50, backgroundColor: '#339900', marginTop: 30 }} icon={{name: 'check', size: 50, color: "white"}}
+                <Button onPress={() => Actions.mainUserProfil()} buttonStyle={{ width: 100, height: 100, borderRadius: 50, backgroundColor: '#339900', marginTop: 30 }} icon={{name: 'check', size: 50, color: "white"}}
                 ></Button>
             </View>
         )

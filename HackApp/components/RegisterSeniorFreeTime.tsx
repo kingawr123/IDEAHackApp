@@ -14,7 +14,7 @@ export class RegisterSeniorFreeTime extends React.Component {
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                 <Text style={styles.textstyle1}>Ulubione miejsca:</Text>
-                <Text style={styles.textstyle2}>Zaznaczone przyciski mają kolor zielony</Text>
+                <Text style={{fontSize: 23, fontFamily:"monospace", textAlign:"center"}}>Zaznaczone przyciski mają kolor zielony</Text>
                 <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="kawiarnia" ></Button>
                 <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="biblioteka" ></Button>
                 <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="kino" ></Button>
