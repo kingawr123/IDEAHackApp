@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableHighlight} from 'react-native';
 import { Button, Image, Input } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { Actions } from 'react-native-router-flux';
 
 
 export class RegisterJuniorHobby extends React.Component {
@@ -14,7 +15,7 @@ export class RegisterJuniorHobby extends React.Component {
         <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="filmy" type="solid" ></Button>
         <Button titleStyle={styles.title} buttonStyle={styles.btnJunior} title="książki" type="solid" ></Button>
         <Input placeholder='Inne' />
-        <Button buttonStyle={{ width: 100, height: 100, borderRadius: 50, backgroundColor: '#339900', marginTop: 20 }} icon={{ name: 'check', size: 50, color: "white" }}
+        <Button onPress={() => Actions.firstPeople()} buttonStyle={{ width: 100, height: 100, borderRadius: 50, backgroundColor: '#339900', marginTop: 20 }} icon={{ name: 'check', size: 50, color: "white" }}
         ></Button>
       </View>
     )

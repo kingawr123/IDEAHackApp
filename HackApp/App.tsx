@@ -9,8 +9,12 @@ import { ChooseGeneration } from './components/ChooseGeneration';
 import { RegisterJuniorHobby } from './components/RegisterJuniorHobby';
 import { RegisterJuniorFreeTime } from './components/RegisterJuniorFreeTime';
 import { SignIn } from './components/SignIn';
+<<<<<<< HEAD
 import { RegisterSeniorHobby } from './components/RegisterSeniorHobby';
 import { RegisterSeniorFreeTime } from './components/RegisterSeniorFreeTime';
+=======
+import { FirstChoicePeople } from './components/FirstChoicePeople';
+>>>>>>> 6d9461b9aef7b11a00b070a8b746df1d4ef4a4ed
 
 
 export default class App extends React.Component {
@@ -28,6 +32,7 @@ export default class App extends React.Component {
             <Scene key="SeniorFreeTime" component={RegisterSeniorFreeTime} hideNavBar/>
             <Scene key="SeniorHobby" component={RegisterSeniorHobby} hideNavBar/>
             <Scene key="signIn" component={SignIn} hideNavBar/>
+            <Scene key="firstPeople" component={FirstChoicePeople} hideNavBar/>
           </Stack>
         </Router>
       </View>
